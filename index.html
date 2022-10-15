@@ -26,27 +26,30 @@
         <p class="categorias espacamento">Primeiro seu prato</p>
         <div class="cardapio">
             <div class="cardapio-opcoes">
-                <div class="produto">
+                <div id='frango' onclick="escolherFrango()" class="produto ">
                     <img src="imgs/frango_yin_yang 1.png">
                     <p class="nome">Frango Yin Yang</p>
                     <p class="obs">Um pouco de batata, um pouco de salada</p>
                     <p class="valor">R$14,90</p>
+                    <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <div class="cardapio-opcoes">
-                <div class="produto">
-                    <img src="imgs/frango_yin_yang 1.png">
-                    <p class="nome">Frango Yin Yang</p>
-                    <p class="obs">Um pouco de batata, um pouco de salada</p>
-                    <p class="valor">R$14,90</p>
+                <div id='risoto' onclick="escolherRisoto()" class="produto ">
+                    <img src="imgs/risoto.jpeg">
+                    <p class="nome">Risoto Alho poro</p>
+                    <p class="obs">Arroz e alho poro</p>
+                    <p class="valor">R$15,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <div class="cardapio-opcoes">
-                <div class="produto">
-                    <img src="imgs/frango_yin_yang 1.png">
-                    <p class="nome">Frango Yin Yang</p>
-                    <p class="obs">Um pouco de batata, um pouco de salada</p>
-                    <p class="valor">R$14,90</p>
+                <div id="carne" onclick="escolherCarne()" class="produto ">
+                    <img src="imgs/strogonoff-de-carne.jpg">
+                    <p class="nome">Strogonoff de carne</p>
+                    <p class="obs">Batata-palha, arroz e carne com molho</p>
+                    <p class="valor">R$17,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
         </div>
@@ -57,27 +60,30 @@
         <div class="cardapio">
             
             <div class="cardapio-opcoes">
-                <div class="produto">
-                    <img src="imgs/coquinha_gelada 1.png">
-                    <p class="nome">Coquinha gelada</p>
-                    <p class="obs">Lata 350ml</p>
-                    <p class="valor">R$4,90</p>
+                <div id='matte' onclick="escolherMatte()" class="produto ">
+                    <img src="imgs/matte_.jpg">
+                    <p class="nome">Matte</p>
+                    <p class="obs">Lata 300ml</p>
+                    <p class="valor">R$2,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <div class="cardapio-opcoes">
-                <div class="produto">
-                    <img src="imgs/coquinha_gelada 1.png">
-                    <p class="nome">Coquinha gelada</p>
+                <div id='guarana' onclick="escolherGuarana()" class="produto ">
+                    <img src="imgs/guarana.jpg">
+                    <p class="nome">Guarana</p>
                     <p class="obs">Lata 350ml</p>
-                    <p class="valor">R$4,90</p>
+                    <p class="valor">R$4,50</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <div class="cardapio-opcoes">
-                <div class="produto">
+                <div id='coca' onclick="escolherCoca()" class="produto ">
                     <img src="imgs/coquinha_gelada 1.png">
                     <p class="nome">Coquinha gelada</p>
                     <p class="obs">Lata 350ml</p>
                     <p class="valor">R$4,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
         </div>
@@ -87,27 +93,30 @@
         <p class="categorias">Por fim, sua sobremesa</p>
         <div class="cardapio fim">
             <div class="cardapio-opcoes">
-                <div class="produto">
+                <div id='pudim' onclick="escolherPudim()" class="produto ">
                     <img src="imgs/pudim 1.png">
                     <p class="nome">Pudim</p>
                     <p class="obs">Apenas pudim</p>
                     <p class="valor">R$7,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <div class="cardapio-opcoes">
-                <div class="produto">
-                    <img src="imgs/pudim 1.png">
-                    <p class="nome">Pudim</p>
-                    <p class="obs">Apenas pudim</p>
-                    <p class="valor">R$7,90</p>
+                <div id='pave' onclick="escolherPave()" class="produto ">
+                    <img src="imgs/pave.jpg">
+                    <p class="nome">Pave</p>
+                    <p class="obs">Pra comer</p>
+                    <p class="valor">R$8,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <div class="cardapio-opcoes">
-                <div class="produto">
-                    <img src="imgs/pudim 1.png">
-                    <p class="nome">Pudim</p>
-                    <p class="obs">Apenas pudim</p>
-                    <p class="valor">R$7,90</p>
+                <div id='petit' onclick="escolherPetit()" class="produto ">
+                    <img src="imgs/petit.jpeg">
+                    <p class="nome">Petit Gateau</p>
+                    <p class="obs">Bolinho e sorvete</p>
+                    <p class="valor">R$10,90</p>
+                    <ion-icon id="check"class="escondido" name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
         </div>
@@ -115,12 +124,16 @@
 
         <!--Rodape-->
         <div class="rodape">
-            <button class="finalizar desligado">
+            <button id="tirar" class="finalizar">
                 Selecione os 3 itens para fechar o pedido
+            </button>
+            <button id="checkout" onclick="zap()" class="finalizar escondido verde">
+                Fechar pedido
             </button>
         </div>
         <!--Rodape-->
     </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="codigo.js"></script> 
 </body>
 </html>

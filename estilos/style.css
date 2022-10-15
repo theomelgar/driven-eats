@@ -25,6 +25,7 @@
     width: 414px;
     background: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 
 }
 .titulo{
@@ -42,9 +43,8 @@
     flex-direction: row;
     align-items: center;
     width: 414px;
-    background-color: aqua;
     overflow: hidden;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .nome{
     font-weight: 700;
@@ -88,7 +88,6 @@
     font-family: 'Righteous', cursive;
 }
 .cardapio-opcoes{
-    background-color:cadetblue ;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -105,6 +104,31 @@
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     padding: 5px 10px;
+    position: relative;
+
+}
+
+ion-icon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #32B72F;
+}
+
+.food{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+}
+.drink{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+}
+.dessert{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
 }
 .rodape{
     padding-left: 15px;
@@ -118,6 +142,7 @@
     justify-content: center;
     align-items: center;
     background: gray;
+    z-index: 1;
 }
 
 .finalizar{
@@ -126,14 +151,26 @@
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.018em;
-    background: #CF2B2B;
+    background: #d8d6d6;
+    border: #000000;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     width: 364px;
     height: 61px;
-    
     color: #FFFFFF;
 }
 
 img{
+    width: 144px;
+    height: 87px;
     border-radius: 4px;
+}
+
+.escondido{
+    display: none;
+}
+
+.verde{
+    font-weight: 700;
+    background: #32B72F;
 }
