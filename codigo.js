@@ -1,8 +1,15 @@
-let produto = 0;
-let total=0;
-let prato=0;
-let liquido=0;
-let doce=0;
+let produto1= 0;
+let produto2= 0;
+let produto3= 0;
+let produto = produto1+produto2+produto3;
+let prato='';
+let pratoValor=0.00;
+let liquido='';
+let liquidoValor=0.00;
+let doce='';
+let doceValor=0.00;
+
+
 const carne = document.getElementById('carne').querySelector('.escondido');
 const frango = document.getElementById('frango').querySelector('.escondido');
 const risoto = document.getElementById('risoto').querySelector('.escondido');
@@ -21,14 +28,16 @@ function escolherFrango(){
     document.getElementById('risoto').classList.remove('food');
     document.getElementById('carne').classList.remove('food');
 
-    produto=produto+1;
-    if (produto===3){
+    produto1=1;
+    prato='Frango Yin Yang';
+    pratoValor=14.90;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+   
 
 }
 
@@ -39,15 +48,16 @@ function escolherRisoto(){
     document.getElementById('frango').classList.remove('food');
     document.getElementById('risoto').classList.add('food');
     document.getElementById('carne').classList.remove('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    prato='Risoto Alho poro';
+    pratoValor=15.90;
+    produto1=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+    
 }
 
 function escolherCarne(){
@@ -57,15 +67,16 @@ function escolherCarne(){
     document.getElementById('frango').classList.remove('food');
     document.getElementById('risoto').classList.remove('food');
     document.getElementById('carne').classList.add('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    prato='Strogonoff de carne';
+    pratoValor=17.90;
+    produto1=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+    
 }
 
 
@@ -76,15 +87,16 @@ function escolherMatte(){
     document.getElementById('matte').classList.add('food');
     document.getElementById('guarana').classList.remove('food');
     document.getElementById('coca').classList.remove('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    liquido='Matte';
+    liquidoValor=2.90;
+    produto2=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+    
 
 }
 
@@ -95,15 +107,16 @@ function escolherGuarana(){
     document.getElementById('matte').classList.remove('food');
     document.getElementById('guarana').classList.add('food');
     document.getElementById('coca').classList.remove('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    liquido='Guarana';
+    liquidoValor=4.50;
+    produto2=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+
 }
 
 function escolherCoca(){
@@ -113,15 +126,16 @@ function escolherCoca(){
     document.getElementById('matte').classList.remove('food');
     document.getElementById('guarana').classList.remove('food');
     document.getElementById('coca').classList.add('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    liquido='Coca';
+    liquidoValor=4.90;
+    produto2=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+    
 }
 
 function escolherPudim(){
@@ -131,15 +145,16 @@ function escolherPudim(){
     document.getElementById('pudim').classList.add('food');
     document.getElementById('pave').classList.remove('food');
     document.getElementById('petit').classList.remove('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    doce='Pudim';
+    doceValor=7.90;
+    produto3=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+    
 }
 
 function escolherPave(){
@@ -149,15 +164,16 @@ function escolherPave(){
     document.getElementById('pudim').classList.remove('food');
     document.getElementById('pave').classList.add('food');
     document.getElementById('petit').classList.remove('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    doce='Pave';
+    doceValor=8.90;
+    produto3=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+    
 }
 
 function escolherPetit(){
@@ -167,15 +183,16 @@ function escolherPetit(){
     document.getElementById('pudim').classList.remove('food');
     document.getElementById('pave').classList.remove('food');
     document.getElementById('petit').classList.add('food');
-    
-    produto=produto+1;
-    if (produto===3){
+    doce='Petit Gateau';
+    doceValor=10.90;
+    produto3=1;
+    if (produto1===1 & produto2===1 & produto3===1){
         const final = document.getElementById('checkout');
         const retirar = document.getElementById('tirar');
         final.classList.remove('escondido');
         retirar.classList.add('escondido');
     }
-    return produto;
+   
 }
 
 
@@ -215,9 +232,10 @@ function s(sobre){
     return produto;
 }*/
 
-if (produto===3){
-    const final = document.getElementById('checkout');
-    const retirar = document.getElementById('tirar');
-    final.classList.remove('escondido');
-    retirar.classList.add('escondido');
+
+function zap(){
+    let mensagem;
+    let total =(doceValor+pratoValor+liquidoValor).toFixed(2) ;
+    mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${liquido}\n- Sobremesa: ${doce}\nTotal: ${total}`;
+    window.open('https://wa.me/+5521999999999?text=' + encodeURIComponent(mensagem));
 }
