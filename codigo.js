@@ -8,7 +8,7 @@ let liquido='';
 let liquidoValor=0.00;
 let doce='';
 let doceValor=0.00;
-
+let total=0.00;
 
 const carne = document.getElementById('carne').querySelector('.escondido');
 const frango = document.getElementById('frango').querySelector('.escondido');
@@ -233,9 +233,42 @@ function s(sobre){
 }*/
 
 
-function zap(){
-    let mensagem;
-    let total =(doceValor+pratoValor+liquidoValor).toFixed(2) ;
-    mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${liquido}\n- Sobremesa: ${doce}\nTotal: ${total}`;
-    window.open('https://wa.me/+5521999999999?text=' + encodeURIComponent(mensagem));
+function confirm(){
+    const lista1 = document.querySelector(".prato");
+    const lista2 = document.querySelector(".bebida");
+    const lista3 = document.querySelector(".sobremesa");
+    const lista1valor = document.querySelector(".pratoValor");
+    const lista2valor = document.querySelector(".bebidaValor");
+    const lista3valor = document.querySelector(".sobremesaValor");
+    const valor = document.querySelector(".total");
+    total =(doceValor+pratoValor+liquidoValor);
+    lista1.innerHTML = `${prato}`;
+    lista1valor.innerHTML = `${pratoValor.toFixed(2)}`;
+    lista2.innerHTML = `${liquido}`;
+    lista2valor.innerHTML = `${liquidoValor.toFixed(2)}`;
+    lista3.innerHTML = `${doce}`;
+    lista3valor.innerHTML = `${doceValor.toFixed(2)}`;
+    valor.innerHTML = `R$ ${total.toFixed(2)}`;   
+    const popup = document.querySelector('.confirmacao');
+    popup.classList.remove('escondido');
+    const fundo = document.querySelector('.conteiner');
+    fundo.classList.add('desfoco');
 }
+
+function cancelar(){
+    const fundo = document.querySelector('.conteiner');
+    fundo.classList.remove('desfoco');
+    const popup = document.querySelector('.confirmacao');
+    popup.classList.add('escondido');
+}
+
+function zap(){
+    total =(doceValor+pratoValor+liquidoValor);
+    let mensagem;
+    const nome = prompt('Qual o seu nome?');
+    const endereco = prompt('Qual o endereço de entrega?');
+    mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${liquido}\n- Sobremesa: ${doce}\nTotal: ${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereco}`;
+    window.open('https://wa.me/+5500000000000?text=' + encodeURIComponent(mensagem));
+}
+
+

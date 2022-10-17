@@ -38,6 +38,7 @@
 
     color: #FFFFFF;
 }
+
 .cardapio{
     display: flex;
     flex-direction: row;
@@ -74,7 +75,7 @@
     margin-bottom: 95px;
 }
 .categorias{
-    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 40px;
     font-style: normal;
     font-weight: 400;
@@ -131,9 +132,8 @@ ion-icon{
     border-radius: 9px;
 }
 .rodape{
-    padding-left: 15px;
+    padding-right: 15px;
     width: 414px;
-    display: flex;
     height: 92px;
     position: fixed;
     bottom:0;
@@ -141,7 +141,7 @@ ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: gray;
+    background: #FFFFFF;
     z-index: 1;
 }
 
@@ -166,11 +166,93 @@ img{
     border-radius: 4px;
 }
 
-.escondido{
-    display: none;
-}
-
 .verde{
     font-weight: 700;
     background: #32B72F;
+}
+
+.confirmacao{
+    position: fixed;
+    top: calc(50% - 353px/2 - 0.5px);
+    left: 19px;
+    width: 377px;
+    height: 353px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.confirmacao p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.confirmar{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #50D074;
+    width: 329px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: #32B72F;
+}
+.lista{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lista1, .lista2, .lista3, .lista4{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.lista4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
+}
+
+.cancelar{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.018em;
+
+color: #FFFFFF;
+}
+.desfoco{
+    opacity: 0.2;
+}
+
+.escondido{
+    display: none;
 }
